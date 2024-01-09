@@ -1,0 +1,122 @@
+[
+  {
+    "hour": "00:00",
+    "newCustomers": 10,
+    "purchasedCustomers": 5
+  },
+  {
+    "hour": "01:00",
+    "newCustomers": 15,
+    "purchasedCustomers": 8
+  },
+  {
+    "hour": "02:00",
+    "newCustomers": 5,
+    "purchasedCustomers": 8
+  },
+  {
+    "hour": "03:00",
+    "newCustomers": 1,
+    "purchasedCustomers": 18
+  },
+  {
+    "hour": "04:00",
+    "newCustomers": 45,
+    "purchasedCustomers": 84
+  },
+  {
+    "hour": "05:00",
+    "newCustomers": 2,
+    "purchasedCustomers": 18
+  },
+  {
+    "hour": "06:00",
+    "newCustomers": 6,
+    "purchasedCustomers": 9
+  },
+  {
+    "hour": "07:00",
+    "newCustomers": 23,
+    "purchasedCustomers": 33
+  },
+  {
+    "hour": "08:00",
+    "newCustomers": 1,
+    "purchasedCustomers": 9
+  },
+  {
+    "hour": "09:00",
+    "newCustomers": 0,
+    "purchasedCustomers": 8
+  },
+  {
+    "hour": "10:00",
+    "newCustomers": 5,
+    "purchasedCustomers": 8
+  },
+  {
+    "hour": "11:00",
+    "newCustomers": 1,
+    "purchasedCustomers": 8
+  },
+  {
+    "hour": "12:00",
+    "newCustomers": 5,
+    "purchasedCustomers": 8
+  },
+  {
+    "hour": "13:00",
+    "newCustomers": 15,
+    "purchasedCustomers": 8
+  },
+  {
+    "hour": "14:00",
+    "newCustomers": 33,
+    "purchasedCustomers": 8
+  },
+  {
+    "hour": "15:00",
+    "newCustomers": 22,
+    "purchasedCustomers": 8
+  },
+  {
+    "hour": "16:00",
+    "newCustomers": 12,
+    "purchasedCustomers": 8
+  },
+  {
+    "hour": "17:00",
+    "newCustomers": 14,
+    "purchasedCustomers": 8
+  },
+  {
+    "hour": "18:00",
+    "newCustomers": 54,
+    "purchasedCustomers": 8
+  },
+  {
+    "hour": "19:00",
+    "newCustomers": 65,
+    "purchasedCustomers": 8
+  },
+  {
+    "hour": "20:00",
+    "newCustomers": 15,
+    "purchasedCustomers": 83
+  },
+  {
+    "hour": "21:00",
+    "newCustomers": 15,
+    "purchasedCustomers": 8
+  },
+  {
+    "hour": "22:00",
+    "newCustomers": 8,
+    "purchasedCustomers": 3
+  },
+  {
+    "hour": "23:00",
+    "newCustomers": 12,
+    "purchasedCustomers": 6
+  }
+]

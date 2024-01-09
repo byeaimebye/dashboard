@@ -1,0 +1,9 @@
+[
+  { "day": "Lunes", "newCustomers": 30, "purchasedCustomers": 15 },
+  { "day": "Martes", "newCustomers": 35, "purchasedCustomers": 18 },
+  { "day": "Miércoles", "newCustomers": 25, "purchasedCustomers": 18 },
+  { "day": "Jueves", "newCustomers": 20, "purchasedCustomers": 25 },
+  { "day": "Viernes", "newCustomers": 45, "purchasedCustomers": 34 },
+  { "day": "Sábado", "newCustomers": 20, "purchasedCustomers": 25 },
+  { "day": "Domingo", "newCustomers": 35, "purchasedCustomers": 18 }
+]
