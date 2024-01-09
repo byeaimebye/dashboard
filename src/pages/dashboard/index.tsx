@@ -8,6 +8,7 @@ import DayChart from '../../../components/charts/days-chart'
 import DaysTable from '../../../components/tables/days'
 import TodayTable from '../../../components/tables/hour'
 import NoInfo from '../../../components/no-info'
+import ReactGA from 'react-ga'
 
 const dateRanges = [
   'HOY',
@@ -47,6 +48,11 @@ const Dashboard = () => {
   }, [selectedRange])
 
   const handleChipClick = (clickedRange: string) => {
+    ReactGA.event({
+      category: 'Date Range Click',
+      action: 'Clicked',
+      label: clickedRange,
+    })
     setSelectedRange(clickedRange)
     setSelectedDay(null)
   }
