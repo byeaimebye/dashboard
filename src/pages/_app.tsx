@@ -9,14 +9,11 @@ import theme from '../../themes/theme'
 
 const queryClient = new QueryClient()
 
-// Verifica si estamos en el navegador antes de intentar acceder a window
 if (typeof window !== 'undefined') {
-  // Inicializa Google Analytics
   ReactGA.initialize('G-16BL2BCZPP', {
-    debug: true, // Puedes activar el modo de depuración para obtener más información
+    debug: true,
   })
 
-  // Envía un evento de página
   ReactGA.pageview(window.location.pathname + window.location.search)
 }
 

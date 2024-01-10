@@ -1,0 +1,48 @@
+[
+  {
+    "month": "Enero",
+
+    "totals": [
+      { "date": "01/01", "facturado": 1200, "acumulado": 1200 },
+      { "date": "10/01", "facturado": 3000, "acumulado": 4200 },
+      { "date": "29/01", "facturado": 20000, "acumulado": 24200 }
+    ],
+    "totalSales": 300,
+    "totalGeneral": 24200,
+    "clients": 85,
+    "sales": 120,
+    "cashback": 800,
+    "cumulative": 4200,
+    "invoiced": 6800
+  },
+  {
+    "month": "Febrero",
+    "totals": [
+      { "date": "01/01", "facturado": 1200, "acumulado": 1200 },
+      { "date": "10/01", "facturado": 3000, "acumulado": 4200 },
+      { "date": "29/01", "facturado": 20000, "acumulado": 24200 }
+    ],
+    "totalGeneral": 24200,
+    "totalSales": 300,
+    "clients": 92,
+    "sales": 105,
+    "cashback": 750,
+    "cumulative": 4800,
+    "invoiced": 7200
+  },
+  {
+    "month": "Marzo",
+    "totals": [
+      { "date": "01/01", "facturado": 1200, "acumulado": 1200 },
+      { "date": "10/01", "facturado": 3000, "acumulado": 4200 },
+      { "date": "29/01", "facturado": 20000, "acumulado": 24200 }
+    ],
+    "totalGeneral": 24200,
+    "totalSales": 300,
+    "clients": 78,
+    "sales": 112,
+    "cashback": 900,
+    "cumulative": 3900,
+    "invoiced": 6500
+  }
+]

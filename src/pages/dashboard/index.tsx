@@ -1,7 +1,6 @@
 import { CalendarToday, Check } from '@mui/icons-material'
 import { Box, Chip, Container, Stack } from '@mui/material'
 import React, { useEffect, useState } from 'react'
-import { AsideInfo } from '../../../components/aside-info'
 import { useDayData, useTodayData } from '../../../services/chartsService'
 import ClientsChart from '../../../components/charts/clients-chart'
 import DayChart from '../../../components/charts/days-chart'
@@ -9,6 +8,7 @@ import DaysTable from '../../../components/tables/days'
 import TodayTable from '../../../components/tables/hour'
 import NoInfo from '../../../components/no-info'
 import ReactGA from 'react-ga'
+import AsideInfo from '../../../components/aside-info/index'
 
 const dateRanges = [
   'HOY',
@@ -35,7 +35,6 @@ const daysOfWeek = [
 const Dashboard = () => {
   const [selectedRange, setSelectedRange] = useState<string | null>('HOY')
   const [selectedDay, setSelectedDay] = useState<string | null>('TODO')
-  const [selectedChip, setSelectedChip] = useState<string | null>(null)
   const todayData = useTodayData()
   const dayData = useDayData()
 
@@ -91,6 +90,7 @@ const Dashboard = () => {
     <Stack direction="row" spacing={1} mt={2}>
       {daysOfWeek.map((day, index) => (
         <Chip
+          data-testid="custom-chip"
           key={index}
           label={day}
           clickable

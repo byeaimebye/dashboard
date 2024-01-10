@@ -50,6 +50,7 @@ const DayChart: React.FC<DayChartProps> = ({ data }) => {
 
   return (
     <BarChart
+      data-testid="day-chart"
       dataset={data}
       xAxis={[{ scaleType: 'band', dataKey: 'day' }]}
       series={series}

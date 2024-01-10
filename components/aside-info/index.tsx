@@ -1,5 +1,4 @@
-// components/AsideInfo.tsx
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import {
   Paper,
   Typography,
@@ -8,9 +7,11 @@ import {
   CardContent,
   ToggleButton,
   Container,
+  IconButton,
 } from '@mui/material'
 import CustomToggleButtons from '../toggle'
 import { useAsideData } from '../../services/chartsService'
+import CloseIcon from '@mui/icons-material/Close'
 
 interface AsideError {
   message: string
@@ -37,17 +38,42 @@ interface MonthData {
 
 export type MonthlyData = MonthData[]
 
-export const AsideInfo = () => {
+const AsideInfo = () => {
   const { data, error, isLoading } = useAsideData()
+  const [isAsideOpen, setIsAsideOpen] = useState(window.innerWidth >= 1300)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsAsideOpen(window.innerWidth >= 1300)
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  const toggleAside = () => {
+    setIsAsideOpen(!isAsideOpen)
+  }
+
+  if (!isAsideOpen) {
+    return (
+      <IconButton
+        onClick={toggleAside}
+        sx={{ position: 'fixed', top: 0, right: 0, zIndex: 9999 }}
+      >
+        <Typography>'Open Aside'</Typography>
+      </IconButton>
+    )
+  }
+
   if (isLoading) {
     return <p>Cargando...</p>
   }
 
   if (error) {
-    // Verificar si el objeto error es del tipo AsideError
     const asideError = error as AsideError
-
-    // Mostrar el mensaje de error si existe
     return <p>Error al cargar los datos del aside: {asideError.message}</p>
   }
 
@@ -65,6 +91,12 @@ export const AsideInfo = () => {
         marginTop: '70px',
       }}
     >
+      <IconButton
+        onClick={toggleAside}
+        sx={{ position: 'absolute', top: 5, right: 5 }}
+      >
+        <CloseIcon />
+      </IconButton>
       <CustomToggleButtons />
       <Box
         sx={{
@@ -144,3 +176,5 @@ export const AsideInfo = () => {
     </Paper>
   )
 }
+
+export default AsideInfo
