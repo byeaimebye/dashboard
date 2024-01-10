@@ -1,40 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dashboard Challenge - Puntospoint
 
-## Getting Started
+Este repositorio contiene la solución al desafío técnico propuesto. A continuación, se proporcionan instrucciones sobre cómo brindar acceso a Google Analytics, cómo configurar y ejecutar la aplicación, y una descripción de las tecnologías utilizadas.
 
-First, run the development server:
+## Contenido
+
+### Google Analytics
+
+#### Brindar Acceso
+
+1. **Inicio de Sesión:** Ingresa a Google Analytics con tu cuenta.
+2. **Configuración de Propiedad:**
+   - Asegúrate de tener una propiedad configurada para este proyecto.
+   - Comparte el ID de seguimiento (UA-XXXXXXXXX-X) con los desarrolladores.
+3. **Otorgar Acceso:**
+   - Proporciona el correo electrónico asociado a la cuenta de Google Analytics a los desarrolladores.
+   - Los desarrolladores deben solicitar acceso, y tú debes aprobar la solicitud desde la configuración de administración.
+
+### Configuración y Ejecución
+
+#### Clonar el Repositorio
+
+```bash
+git clone https://github.com/tu-usuario/puntospoint-dashboard.git
+cd puntospoint-dashboard
+```
+
+#### Instalar dependencias
+
+```bash
+npm install
+```
+
+#### Ejecutar la aplicacion
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Acceder a la Aplicación
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Tecnologías Utilizadas
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- **React JS v18 y Next JS v12:** Framework de desarrollo web para construir aplicaciones modernas de manera eficiente.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **TypeScript:** Lenguaje de programación que agrega tipos a JavaScript, mejorando la robustez y mantenibilidad del código.
 
-## Learn More
+- **Material UI:** Biblioteca de componentes React para un diseño consistente y atractivo.
 
-To learn more about Next.js, take a look at the following resources:
+- **Cypress:** Herramienta de prueba end-to-end para probar la funcionalidad de la aplicación.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **React Query:** Biblioteca para la gestión de datos en aplicaciones React, facilitando la obtención, gestión y actualización de datos.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Google Analytics:** Herramienta de análisis web para rastrear y informar sobre la actividad del usuario en la aplicación.
 
-## Deploy on Vercel
+- **Vercel:** Plataforma de alojamiento y despliegue rápido para aplicaciones web. Proporciona despliegues automáticos, escalabilidad y fácil configuración.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Host de vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Abre [https://dashboard-psi-one-24.vercel.app/](DashboardC) en tu navegador.
+
+### Nota Importante:
+
+Aunque la aplicación puede no cumplir completamente con todos los detalles del diseño proporcionado en Figma, se priorizó la concentración de esfuerzos en la implementación de las tecnologías solicitadas y el cumplimiento de los requerimientos en el tiempo establecido. Agradezco la comprensión y estoy abierta a cualquier comentario o sugerencia para mejorar el proyecto. ¡Gracias!

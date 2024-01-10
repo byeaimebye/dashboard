@@ -40,18 +40,23 @@ export type MonthlyData = MonthData[]
 
 const AsideInfo = () => {
   const { data, error, isLoading } = useAsideData()
-  const [isAsideOpen, setIsAsideOpen] = useState(window.innerWidth >= 1300)
+  const isBrowser = typeof window !== 'undefined'
+  const [isAsideOpen, setIsAsideOpen] = useState(
+    isBrowser ? window.innerWidth >= 1300 : false
+  )
 
   useEffect(() => {
     const handleResize = () => {
-      setIsAsideOpen(window.innerWidth >= 1300)
+      setIsAsideOpen(isBrowser ? window.innerWidth >= 1300 : false)
     }
 
-    window.addEventListener('resize', handleResize)
-    return () => {
-      window.removeEventListener('resize', handleResize)
+    if (isBrowser) {
+      window.addEventListener('resize', handleResize)
+      return () => {
+        window.removeEventListener('resize', handleResize)
+      }
     }
-  }, [])
+  }, [isBrowser])
 
   const toggleAside = () => {
     setIsAsideOpen(!isAsideOpen)
