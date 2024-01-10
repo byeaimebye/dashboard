@@ -11,18 +11,17 @@ Este repositorio contiene la solución al desafío técnico propuesto. A continu
 1. **Inicio de Sesión:** Ingresa a Google Analytics con tu cuenta.
 2. **Configuración de Propiedad:**
    - Asegúrate de tener una propiedad configurada para este proyecto.
-   - Comparte el ID de seguimiento (UA-XXXXXXXXX-X) con los desarrolladores.
+   - ID de seguimiento (G-16BL2BCZPP).
 3. **Otorgar Acceso:**
-   - Proporciona el correo electrónico asociado a la cuenta de Google Analytics a los desarrolladores.
-   - Los desarrolladores deben solicitar acceso, y tú debes aprobar la solicitud desde la configuración de administración.
+   - Solicitar acceso a aimeagustinagarces@gmail.com
 
 ### Configuración y Ejecución
 
 #### Clonar el Repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/puntospoint-dashboard.git
-cd puntospoint-dashboard
+git clonehttps://github.com/byeaimebye/dashboard.git
+cd chart-dashboard
 ```
 
 #### Instalar dependencias
@@ -59,7 +58,7 @@ Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
 ### Host de vercel
 
-Abre [https://dashboard-psi-one-24.vercel.app/](DashboardC) en tu navegador.
+Abre [https://dashboard-psi-one-24.vercel.app/](https://dashboard-psi-one-24.vercel.app/) en tu navegador.
 
 ### Nota Importante:
 
