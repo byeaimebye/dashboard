@@ -20,7 +20,7 @@ Este repositorio contiene la solución al desafío técnico propuesto. A continu
 #### Clonar el Repositorio
 
 ```bash
-git clonehttps://github.com/byeaimebye/dashboard.git
+git clone https://github.com/byeaimebye/dashboard.git
 cd chart-dashboard
 ```
 
@@ -42,7 +42,7 @@ Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
 ## Tecnologías Utilizadas
 
-- **React JS v18 y Next JS v12:** Framework de desarrollo web para construir aplicaciones modernas de manera eficiente.
+- **React JS y Next JS:** Framework de desarrollo web para construir aplicaciones modernas de manera eficiente.
 
 - **TypeScript:** Lenguaje de programación que agrega tipos a JavaScript, mejorando la robustez y mantenibilidad del código.
 
@@ -55,6 +55,8 @@ Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 - **Google Analytics:** Herramienta de análisis web para rastrear y informar sobre la actividad del usuario en la aplicación.
 
 - **Vercel:** Plataforma de alojamiento y despliegue rápido para aplicaciones web. Proporciona despliegues automáticos, escalabilidad y fácil configuración.
+
+- **Linter:** Herramienta para analizar el código en busca de posibles errores y mejorar la calidad del mismo.
 
 ### Host de vercel
 
